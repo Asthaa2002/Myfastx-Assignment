@@ -1,28 +1,27 @@
 const mongoose = require('mongoose');
 
 const course_Schema = new mongoose.Schema({
-     title: {
+    title: {
         type: String
-     },
-     description: {
+    },
+    description: {
         type: String
-     },
-     image: {
+    },
+    image: {
         name: {
             type: String,
         },
         path: {
             type: String,
         }
-     },
-    chapter: {
-        type:String,
     },
-   
+    chapter: {
+        type: String,
+    },
     amount: {
         type: Number,
     }
 
 })
 
-module.exports = mongoose.model('Course',course_Schema)
+module.exports = mongoose.model('Course', course_Schema)
