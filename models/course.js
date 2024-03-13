@@ -18,11 +18,7 @@ const course_Schema = new mongoose.Schema({
     chapter: {
         type:String,
     },
-    chapterList: {
-        chapterNo:{type:Number},
-        chapterName: {type:String},
-        chapterData: {type:String},
-    } ,
+   
     amount: {
         type: Number,
     }

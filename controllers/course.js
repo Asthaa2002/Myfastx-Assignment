@@ -4,7 +4,7 @@ const course_Schema = require('../models/course');
 
 exports.createCourse = async (req, res) => {
     try {
-        const { title, description, chapter, chapterList, amount } = req.body;
+        const { title, description, chapter,  amount } = req.body;
 
         if (!req.file) {
             return res.status(400).json({ message: 'No file uploaded' });
@@ -19,7 +19,6 @@ exports.createCourse = async (req, res) => {
                 path: path,
             },
             chapter,
-            chapterList,
             amount,
         })
 
