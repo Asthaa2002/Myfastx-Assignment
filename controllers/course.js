@@ -40,7 +40,7 @@ exports.retrieveCourses = async (req, res) => {
         if (!findCourse) {
             res.status(404).json({ message: "no course found " });
         }
-        res.status(200).json({ message: "course fetched !!", findCourse });
+     res.status(200).json({ message: "course fetched !!", findCourse });
 
 
     }
